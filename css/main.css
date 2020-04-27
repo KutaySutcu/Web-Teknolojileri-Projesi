@@ -1,0 +1,85 @@
+html,
+body,
+#cover {
+    height: 100%;
+}
+
+#cover {
+    background: url('../images/mainbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.fixed-top {
+    max-width: 1140px;
+    margin: 20px auto;
+}
+
+h1 {
+    margin-top:20%;
+    margin-bottom: 30px;
+}
+
+a.nav-link {
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+}
+
+a.nav-link:hover {
+    color: white !important;
+}
+
+#hobiler {
+    background-color: chocolate;
+    padding: 120px 0;
+}
+
+.tablo1 {
+    margin-top: 10%;
+}
+
+h5 {
+    margin-top:5%;
+}
+
+#sehrimcover {
+    background-color: darkgray;
+    padding: 120px 0;
+}
+
+#ozgecmiscover {
+    background-color: darkgray;
+    padding: 120px 0;
+}
+
+.table {
+    border-color: black;
+}
+
+#carouselExampleIndicators {
+    margin-top: 5%;
+}
+
+#sehrimtanitim {
+    background-color: gray;
+    padding: 120px 0;
+}
+
+#takimcover {
+    background-color: green;
+    padding: 120px 0;
+}
+
+.takimlogo {
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+.login {
+    margin-top: 250px;
+    margin-left: 400px;
+}
