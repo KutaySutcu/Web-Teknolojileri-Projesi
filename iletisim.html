@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+      
+        <title>İletişim</title>
+    </head>
+    <body>
+        <script>
+            function validateForm() {
+                var ad = document.forms["myForm"]["ad"].value;
+                var soyad = document.forms["myForm"]["soyad"].value;
+                var cinsiyet = document.forms["myForm"]["cinsiyet"].value;
+                var mail = document.forms["myForm"]["mail"].value;
+                var telefon = document.forms["myForm"]["telefon"].value;
+                if(ad==""){
+                    alert("Ad kısmı boş bırakılamaz!");
+                    return false;
+                }
+                if(soyad==""){
+                    alert("Soyad kısmı boş bırakılamaz!");
+                    return false;
+                }
+                if(telefon==""){
+                    alert("Telefon numarası boş bırakılamaz!");
+                    return false;
+                }
+            }
+        </script>
+        <div class="container">  
+            <div class="row">
+              <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-faded">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Kutay Sütçü Websitesi"/></a>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><b>ANA SAYFA</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ozgecmis.html"><b>ÖZGEÇMİŞ</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sehrim.html"><b>ŞEHRİM</b><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>İLETİŞİM</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><b>GİRİŞ YAP</b></a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="row">
+                <div class="login">
+                    <h6><font size="6"><b>İletişim Bilgileri</b></font></h6>
+                    <form name="myForm" onsubmit="return validateForm()" method="POST" action="goruntule.php">
+                        <table>
+                            <tr>
+                                <th>Ad</th>
+                                <td><input type="text" name="ad"></td>
+                            </tr>
+                            <tr>
+                                <th>Soyad</th>
+                                <td><input type="text" name="soyad"></td>
+                            </tr>
+                            <tr>
+                                <th><input type="radio" name="cinsiyet" value="Erkek" required>Erkek&nbsp;<input type="radio" name="cinsiyet" value="Kadın" required>Kadın</th>
+                            </tr>
+                            <tr>
+                                <th>E-Mail</th>
+                                <td><input type="email" name="mail" required></td>
+                            </tr>
+                            <tr>
+                                <th>Telefon Numarası</th>
+                                <td><input type="text" name="telefon" maxlength="10" minlength="10"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" value="Gönder">&nbsp;<input type="reset" value="Temizle"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>    
+        </div>
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

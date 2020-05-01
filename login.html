@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+      
+        <title>Giriş Yap</title>
+    </head>
+    <body>
+        <div class="container">  
+            <div class="row">
+              <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-faded">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Kutay Sütçü Websitesi"/></a>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><b>ANA SAYFA</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ozgecmis.html"><b>ÖZGEÇMİŞ</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sehrim.html"><b>ŞEHRİM</b><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="iletisim.html"><b>İLETİŞİM</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>GİRİŞ YAP</b></a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="row">
+                <div class="login">
+                    <form method="POST" action="control.php">
+                        <input type="email" name="kullaniciAdi" placeholder="Kullanıcı Adı" required><br><br>
+                        <input type="password" name="sifre" placeholder="Şifre" required><br><br>
+                        <input type="submit" value="Giriş Yap">
+                    </form>
+                </div>
+            </div>    
+        </div>
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
